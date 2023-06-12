@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-def add_tuple(tuple_a=(), tuple_b=()):
-    tuple_a += (0, 0)
-    tuple_b += (0, 0)
-    t = (tuple_a[0] + tuple_b[0], tuple_a[1] + 0)
+def multiple_returns(sentence):
+    if len(sentence) == 0:
+        t = (0, None)
+        return t
+    t = (len(sentence), sentence[0])
     return t
