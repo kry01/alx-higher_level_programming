@@ -24,9 +24,10 @@ class Square():
     def size(self, value=0):
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        else:
+            self.__size = value
 
     def my_print(self):
         if self.size == 0:
@@ -50,4 +51,5 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         elif (type(value[0]) is not int) or (type(value[1]) is not int):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+        else:
+            self.__position = value
