@@ -29,12 +29,14 @@ class Square():
         self.__size = value
 
     def my_print(self):
-        if not self.__size:
-            print("")
-        for i in range(self.__size):
-            for j in range(self.__position[1]):
+        if self.size == 0:
+            print()
+        else:
+            for i in range(self.position[1]):
                 print("")
-            print(" " * self.__position[0] + "#" * self.__size)
+            for i in range(self.size):
+                print(" " * self.position[0], end="")
+                print("#" * self.size)
 
     @property
     def position(self):
