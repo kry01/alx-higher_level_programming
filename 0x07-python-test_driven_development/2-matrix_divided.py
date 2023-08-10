@@ -6,7 +6,7 @@
 def matrix_divided(matrix, div):
     """ matrix_devided function thats devide the whole matrix by div number
     """
-    if (type(matrix) is not list and
+    if (type(matrix) is not list or
             not all((type(row) is list) for row in matrix)):
         raise TypeError("matrix must be a matrix "
                         "(list of lists) of integers/floats")
