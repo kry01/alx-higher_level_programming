@@ -5,7 +5,7 @@
 
 def matrix_divided(matrix, div):
     if (type(matrix) is not list and
-        not all((type(row) is list) for row in matrix)):
+            not all((type(row) is list) for row in matrix)):
         raise TypeError("matrix must be a matrix "
                         "(list of lists) of integers/floats")
 
