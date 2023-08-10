@@ -9,4 +9,30 @@ add two intergers
 >>> add_integer(2.5, 2.5)
 4
 
+>>> add_integer("hello", 100)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(100, "txt")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+
+>>> add_integer("test", "txt")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(100)
+198
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
+>>> add_integer(2.3, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+
 """
